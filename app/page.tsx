@@ -955,7 +955,7 @@ export default function Home() {
     </a>
 
     <a href="/packages" className="hover:text-cyan-400 transition">
-  Contact
+  Packages
 </a>
 
     <a href="#about" className="hover:text-cyan-400 transition">
@@ -980,8 +980,8 @@ export default function Home() {
 
         <ul className="space-y-3 text-gray-400">
           <li>Pune, Maharashtra</li>
-          <li>hello@axora.in</li>
-          <li>+91 XXXXX XXXXX</li>
+          <li>adityaanaikrane@gmail.com</li>
+          <li>+91 80105 58665</li>
         </ul>
       </div>
 
@@ -998,7 +998,7 @@ export default function Home() {
       <div className="flex gap-6 mt-4 md:mt-0 text-gray-400">
 
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/aditya-naik-044090309/"
           target="_blank"
           className="hover:text-cyan-400 transition"
         >
@@ -1006,7 +1006,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/aditya.naik.750/"
           target="_blank"
           className="hover:text-cyan-400 transition"
         >
@@ -1014,7 +1014,7 @@ export default function Home() {
         </a>
 
         <a
-          href="mailto:hello@axora.in"
+          href="mailto:adityaanaikrane@gmail.com"
           className="hover:text-cyan-400 transition"
         >
           Email
