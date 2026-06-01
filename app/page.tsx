@@ -636,9 +636,19 @@ export default function Home() {
           Start Your Project
         </button>
 
-        <button className="px-10 py-4 rounded-full border border-cyan-400 hover:bg-cyan-400/10 transition-all">
-          Contact Us
-        </button>
+        <button
+  onClick={() =>
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=adityaanaikrane@gmail.com&su=Project%20Inquiry&body=Hi%20Axora%20Team,%0A%0AI%20would%20like%20to%20discuss%20a%20project.",
+      "_blank"
+    )
+  }
+  className="px-10 py-4 rounded-full border border-cyan-400 hover:bg-cyan-400/10 transition-all"
+>
+  Contact Us
+</button>
+
+        
 
       </div>
 
