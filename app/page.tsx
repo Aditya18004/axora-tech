@@ -35,7 +35,9 @@ export default function Home() {
     Home
   </a>
 
-  
+  <a href="#about" className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
+    About
+  </a>
 
   <a
   href="/packages"
@@ -48,9 +50,7 @@ export default function Home() {
     About Founder
   </a>
 
-  <a href="#about" className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
-    About
-  </a>
+  
 
   
 
