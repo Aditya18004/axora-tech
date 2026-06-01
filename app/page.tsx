@@ -44,7 +44,12 @@ export default function Home() {
 
   
 
-  <a href="#contact" className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
+  <a onClick={() =>
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=adityaanaikrane@gmail.com&su=Project%20Inquiry&body=Hi%20Axora%20Team,%0A%0AI%20would%20like%20to%20discuss%20a%20project.",
+      "_blank"
+    )
+  } className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
     Contact
   </a>
 </div>
@@ -1024,7 +1029,12 @@ export default function Home() {
         </a>
 
         <a
-          href="mailto:adityaanaikrane@gmail.com"
+          onClick={() =>
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=adityaanaikrane@gmail.com&su=Project%20Inquiry&body=Hi%20Axora%20Team,%0A%0AI%20would%20like%20to%20discuss%20a%20project.",
+      "_blank"
+    )
+  }
           className="hover:text-cyan-400 transition"
         >
           Email
