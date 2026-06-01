@@ -1,5 +1,13 @@
 
 "use client";
+
+import {
+  Mail,
+  Phone,
+  Globe,
+  ArrowRight,
+} from "lucide-react";
+
 import Link from "next/link";
 
 import { motion } from "framer-motion";
@@ -27,9 +35,7 @@ export default function Home() {
     Home
   </a>
 
-  <a href="#services" className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
-    Services
-  </a>
+  
 
   <a
   href="/packages"
@@ -38,20 +44,22 @@ export default function Home() {
   Packages
 </a>
 
+<a href="#founder" className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
+    About Founder
+  </a>
+
   <a href="#about" className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
     About
   </a>
 
   
 
-  <a onClick={() =>
-    window.open(
-      "https://mail.google.com/mail/?view=cm&fs=1&to=adityaanaikrane@gmail.com&su=Project%20Inquiry&body=Hi%20Axora%20Team,%0A%0AI%20would%20like%20to%20discuss%20a%20project.",
-      "_blank"
-    )
-  } className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
-    Contact
-  </a>
+  <a
+  href="#contact"
+  className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full"
+>
+  Contact
+</a>
 </div>
 
         </div>
@@ -485,7 +493,7 @@ export default function Home() {
 
 {/* Founder Section */}
 <motion.section
-  id="about"
+  id="founder"
   className="py-32 px-8"
   initial={{ opacity: 0, y: 80 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -616,51 +624,165 @@ export default function Home() {
 
 <div className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent mb-20"></div>
 
-{/* CTA Section */}
+{/* Contact Section */}
 <section
   id="contact"
   className="py-32 px-8"
 >
-  <div className="max-w-6xl mx-auto">
+  <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
 
-    <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-3xl p-16 text-center">
+    {/* Left Side */}
+    <div>
 
-      <h2 className="text-5xl font-bold mb-6">
-  Let's Build Something Extraordinary
-</h2>
+      <span className="px-4 py-2 border border-cyan-500 rounded-full text-cyan-400 text-sm">
+        CONTACT
+      </span>
 
-      <p className="text-gray-300 text-xl max-w-3xl mx-auto mb-10">
-  Partner with Axora Technologies to create intelligent software,
-  AI-powered solutions and digital experiences that drive innovation,
-  efficiency and long-term business growth.
-</p>
+      <h2 className="text-5xl md:text-6xl font-bold mt-8 leading-tight">
+        Let's build something
+        <br />
+        extraordinary.
+      </h2>
 
-      <div className="flex justify-center gap-4 flex-wrap">
+      <p className="text-gray-400 mt-8 text-lg max-w-xl">
+        Whether you have a specific project in mind or just want to explore
+        possibilities, we're ready to help you navigate the digital landscape.
+      </p>
 
-        <button className="px-10 py-4 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600 hover:scale-105 transition-all">
-          Start Your Project
-        </button>
+      <div className="mt-12 space-y-8">
 
-        <button
-  onClick={() =>
-    window.open(
-      "https://mail.google.com/mail/?view=cm&fs=1&to=adityaanaikrane@gmail.com&su=Project%20Inquiry&body=Hi%20Axora%20Team,%0A%0AI%20would%20like%20to%20discuss%20a%20project.",
-      "_blank"
-    )
-  }
-  className="px-10 py-4 rounded-full border border-cyan-400 hover:bg-cyan-400/10 transition-all"
->
-  Contact Us
-</button>
+        <div className="flex items-start gap-5">
+          <div className="w-14 h-14 rounded-full bg-cyan-500/10 border border-cyan-500 flex items-center justify-center">
+            <Mail className="text-cyan-400" />
+          </div>
 
-        
+          <div>
+            <h4 className="font-semibold text-xl">
+              Email Us
+            </h4>
+
+            <p className="text-gray-400">
+              adityaanaikrane@gmail.com
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-5">
+          <div className="w-14 h-14 rounded-full bg-cyan-500/10 border border-cyan-500 flex items-center justify-center">
+            <Phone className="text-cyan-400" />
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-xl">
+              Call Us
+            </h4>
+
+            <p className="text-gray-400">
+              +91 80105 58665
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-5">
+          <div className="w-14 h-14 rounded-full bg-cyan-500/10 border border-cyan-500 flex items-center justify-center">
+            <Globe className="text-cyan-400" />
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-xl">
+              Remote Creative Studio
+            </h4>
+
+            <p className="text-gray-400">
+              Helping brands scale through modern web solutions.
+            </p>
+          </div>
+        </div>
 
       </div>
 
     </div>
 
-  </div>
+    {/* Form */}
+    <div className="bg-[#07133D] border border-cyan-500/20 rounded-3xl p-8">
 
+      <h3 className="text-4xl font-bold mb-8">
+        Send a Message
+      </h3>
+
+      <form className="space-y-6">
+
+        <div className="grid md:grid-cols-2 gap-5">
+
+          <div>
+            <label className="block mb-2 text-gray-300">
+              Full Name
+            </label>
+
+            <input
+              type="text"
+              placeholder="John Doe"
+              className="w-full bg-[#020A2B] border border-cyan-500/20 rounded-xl px-4 py-4 outline-none focus:border-cyan-400"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-2 text-gray-300">
+              Email
+            </label>
+
+            <input
+              type="email"
+              placeholder="john@example.com"
+              className="w-full bg-[#020A2B] border border-cyan-500/20 rounded-xl px-4 py-4 outline-none focus:border-cyan-400"
+            />
+          </div>
+
+        </div>
+
+        <div>
+          <label className="block mb-2 text-gray-300">
+            Service Needed
+          </label>
+
+          <input
+            type="text"
+            placeholder="Web Development, AI, Automation..."
+            className="w-full bg-[#020A2B] border border-cyan-500/20 rounded-xl px-4 py-4 outline-none focus:border-cyan-400"
+          />
+        </div>
+
+        <div>
+          <label className="block mb-2 text-gray-300">
+            Your Message
+          </label>
+
+          <textarea
+            rows={6}
+            placeholder="Tell us about your project..."
+            className="w-full bg-[#020A2B] border border-cyan-500/20 rounded-xl px-4 py-4 outline-none resize-none focus:border-cyan-400"
+          />
+        </div>
+
+        <button
+          type="button"
+          onClick={() =>
+            window.open(
+              "https://mail.google.com/mail/?view=cm&fs=1&to=adityaanaikrane@gmail.com&su=Project%20Inquiry",
+              "_blank"
+            )
+          }
+          className="w-full py-5 rounded-2xl bg-gradient-to-r from-cyan-400 to-blue-600 font-semibold flex items-center justify-center gap-3 hover:scale-[1.02] transition"
+        >
+          Send Message
+          <ArrowRight size={20} />
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
 </section>
 
 

@@ -131,3 +131,7 @@ html {
   width: max-content;
   gap: 24px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
