@@ -1,6 +1,6 @@
 
-
 "use client";
+import Link from "next/link";
 
 import { motion } from "framer-motion";
 
@@ -31,13 +31,18 @@ export default function Home() {
     Services
   </a>
 
+  <a
+  href="/packages"
+  className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full"
+>
+  Packages
+</a>
+
   <a href="#about" className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
     About
   </a>
 
-  <a href="#projects" className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
-    Projects
-  </a>
+  
 
   <a href="#contact" className="hover:text-cyan-400 transition duration-300 relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full">
     Contact
@@ -82,12 +87,12 @@ export default function Home() {
   transition={{ delay: 1, duration: 1 }}
 >
 
-          <a
-  href="#contact"
-  className="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600 hover:scale-105 transition-all inline-block"
->
+          
+  <Link href="/packages"
+  className="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600 hover:scale-105 transition-all inline-block">
   Get Started
-</a>
+</Link>
+  
 
 <a
   href="#contact"
@@ -948,6 +953,10 @@ export default function Home() {
     <a href="#services" className="hover:text-cyan-400 transition">
       Services
     </a>
+
+    <a href="/packages" className="hover:text-cyan-400 transition">
+  Contact
+</a>
 
     <a href="#about" className="hover:text-cyan-400 transition">
       About
